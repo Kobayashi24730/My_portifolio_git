@@ -1,40 +1,48 @@
+// estilo Microsoft Fluent + acessibility WCAG
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-6">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-          <span className="text-primary">01.</span> Sobre mim
+        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">
+          <span className="text-blue-700">01.</span> Sobre mim
         </h2>
-        <div className="w-16 h-0.5 bg-primary mb-8 box-glow" />
+        <div className="w-16 h-1 bg-blue-700 rounded-full mb-8 shadow-sm" />
 
-        <div className="bg-card border border-border rounded-xl p-8">
-          <div className="font-[var(--font-display)] text-sm text-muted-foreground mb-4">
-            <span className="text-primary">const</span> <span className="text-accent">dev</span> = {'{'}
+        {/* Card Estilo Microsoft Fluent (Ajustado para maior contraste) */}
+        <div className="bg-white/85 backdrop-blur-md border border-slate-200/80 rounded-2xl p-8 shadow-lg shadow-slate-300/40 hover:shadow-xl transition-all duration-300">
+          
+          {/* Objeto de código com sintaxe em alto contraste */}
+          <div className="font-[var(--font-display)] text-sm font-medium text-slate-700 mb-4">
+            <span className="text-purple-700 font-bold">const</span> <span className="text-blue-700 font-bold">dev</span> = {'{'}
           </div>
-          <div className="pl-6 space-y-2 font-[var(--font-display)] text-sm">
+          
+          <div className="pl-6 space-y-2.5 font-[var(--font-display)] text-sm font-medium">
             <p>
-              <span className="text-muted-foreground">nome:</span>{" "}
-              <span className="text-primary">"Guilherme Silva"</span>,
+              <span className="text-slate-700">nome:</span>{" "}
+              <span className="text-emerald-800 font-semibold">"Guilherme Silva"</span>,
             </p>
             <p>
-              <span className="text-muted-foreground">cargo:</span>{" "}
-              <span className="text-primary">"Desenvolvedor Web Fullstack"</span>,
+              <span className="text-slate-700">atuação:</span>{" "}
+              <span className="text-emerald-800 font-semibold">"Full Stack & AI Engineer"</span>,
             </p>
             <p>
-              <span className="text-muted-foreground">experiência:</span>{" "}
-              <span className="text-primary">"5+ anos"</span>,
+              <span className="text-slate-700">experiencia:</span>{" "}
+              <span className="text-emerald-800 font-semibold">"4+ anos"</span>,
             </p>
             <p>
-              <span className="text-muted-foreground">paixão:</span>{" "}
-              <span className="text-primary">"Transformar user stories em funcionalidades eficientes"</span>,
+              <span className="text-slate-700">foco:</span>{" "}
+              <span className="text-emerald-800 font-semibold">"Sistemas escaláveis e inteligência artificial"</span>,
             </p>
           </div>
-          <div className="font-[var(--font-display)] text-sm text-muted-foreground mt-4">
+          
+          <div className="font-[var(--font-display)] text-sm font-medium text-slate-700 mt-4">
             {'}'};
           </div>
 
-          <p className="text-muted-foreground mt-6 leading-relaxed">
-            Sou um desenvolvedor web fullstack com sólida experiência no desenvolvimento e manutenção de sistemas robustos utilizando PHP (Laravel) e JavaScript (NextJS). Especialista em bancos de dados relacionais e rotinas complexas de migração de dados. Foco em entregar soluções seguras e performáticas, com forte capacidade analítica para transformar user stories em funcionalidades eficientes e documentadas.
+          {/* Texto principal legível e bem escuro */}
+          <p className="text-slate-800 mt-6 leading-relaxed font-normal text-base">
+            Engenheiro de Software Full Stack especializado na criação de aplicações web de alta performance. Tenho sólida bagagem no ecossistema <strong className="font-semibold text-slate-950">PHP (Laravel)</strong> e <strong className="font-semibold text-slate-950">JavaScript/TypeScript (Next.js, Node.js)</strong>, além de expertise em modelagem de bancos de dados relacionais e automação de rotinas complexas. Atuo unindo análise técnica apurada e engenharia de IA para transformar requisitos de negócio em produtos seguros, escaláveis e bem documentados.
           </p>
         </div>
       </div>

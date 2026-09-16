@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "/My_portifolio_git/",
   server: {
-    host: "::",
+    host: true,
     port: 8080,
     hmr: {
       overlay: false,

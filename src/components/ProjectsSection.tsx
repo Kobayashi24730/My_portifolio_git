@@ -9,90 +9,92 @@ const projects = [
     live: "#",
   },
   {
-    title: "Task Manager API",
-    description: "API RESTful para gerenciamento de tarefas com autenticação JWT, CRUD completo e documentação Swagger.",
-    tags: ["Node.js", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/seu-usuario/task-api",
-    live: "#",
-  },
-  {
-    title: "Real-Time Chat",
-    description: "Aplicação de chat em tempo real com WebSockets, salas privadas e histórico de mensagens.",
-    tags: ["React", "Socket.io", "Node.js", "Redis"],
-    github: "https://github.com/seu-usuario/realtime-chat",
-    live: "#",
-  },
-  {
     title: "Dashboard Analytics",
     description: "Dashboard interativo com gráficos dinâmicos, filtros avançados e exportação de relatórios em PDF.",
     tags: ["Next.js", "TypeScript", "Recharts", "Tailwind"],
     github: "https://github.com/seu-usuario/dashboard",
     live: "#",
   },
+  {
+    title: "SaaS Clear White",
+    description: "Plataforma SaaS com front-end em React e back-end em Laravel, cobrindo autenticação, planos e área do cliente.",
+    tags: ["React", "Laravel", "PostgreSQL", "Tailwind"],
+    github: "https://github.com/Kobayashi24730/lp-clear-white",
+    live: "#",
+  },
+  {
+    title: "Atendimento via WhatsApp",
+    description: "Sistema de atendimento automatizado via WhatsApp, com integração à Evolution API para gestão de conversas e webhooks.",
+    tags: ["Node.js", "Evolution API", "WhatsApp", "Webhooks", "Next.js"],
+    github: "https://github.com/Kobayashi24730/evolution-whatsapp-atendimento",
+    live: "#",
+  },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-6">
+    <section
+      id="projects"
+      aria-labelledby="projects-heading"
+      className="py-24 px-6"
+      style={{ fontFamily: '"Segoe UI", "Segoe UI Web", -apple-system, BlinkMacSystemFont, Roboto, sans-serif' }}
+    >
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-          <span className="text-primary">03.</span> Projetos
+        <h2 id="projects-heading" className="text-3xl md:text-4xl font-semibold text-[#201F1E] mb-2">
+          <span className="text-[#0078D4]">03.</span> Projetos
         </h2>
-        <div className="w-16 h-0.5 bg-primary mb-12 box-glow" />
+        <div className="w-16 h-0.5 bg-[#0078D4] mb-12" aria-hidden="true" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
-            <div
+            <article
               key={project.title}
-              className="bg-card border border-border rounded-xl p-6 hover:border-primary transition-all group animate-fade-in-up relative overflow-hidden"
+              className="bg-white border border-[#E1E1E1] rounded-md p-6 shadow-sm hover:border-[#0078D4] hover:shadow-md focus-within:border-[#0078D4] focus-within:shadow-md transition-all motion-safe:animate-fade-in-up"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              {/* Top glow line */}
-              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-
-              <div className="flex items-start justify-between mb-4">
-                <h3 className="font-[var(--font-display)] text-foreground text-lg font-semibold group-hover:text-primary transition-colors">
+              <div className="flex items-start justify-between mb-4 gap-3">
+                <h3 className="text-[#201F1E] text-lg font-semibold">
                   {project.title}
                 </h3>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 shrink-0">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`Ver ${project.title} no GitHub`}
+                    className="text-[#605E5C] hover:text-[#0078D4] focus-visible:text-[#0078D4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0078D4] rounded transition-colors"
+                    aria-label={`Ver código de ${project.title} no GitHub`}
                   >
-                    <Github size={18} />
+                    <Github size={18} aria-hidden="true" />
                   </a>
                   {project.live !== "#" && (
                     <a
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                      aria-label={`Ver demo de ${project.title}`}
+                      className="text-[#605E5C] hover:text-[#0078D4] focus-visible:text-[#0078D4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0078D4] rounded transition-colors"
+                      aria-label={`Ver demonstração ao vivo de ${project.title}`}
                     >
-                      <ExternalLink size={18} />
+                      <ExternalLink size={18} aria-hidden="true" />
                     </a>
                   )}
                 </div>
               </div>
 
-              <p className="text-muted-foreground text-sm mb-5 leading-relaxed">
+              <p className="text-[#605E5C] text-sm mb-5 leading-relaxed">
                 {project.description}
               </p>
 
-              <div className="flex flex-wrap gap-2">
+              <ul className="flex flex-wrap gap-2" aria-label={`Tecnologias usadas em ${project.title}`}>
                 {project.tags.map((tag) => (
-                  <span
+                  <li
                     key={tag}
-                    className="font-[var(--font-display)] text-xs text-primary bg-primary/10 px-2.5 py-1 rounded-md"
+                    className="text-xs font-medium text-[#0078D4] bg-[#EFF6FC] border border-[#C7E0F4] px-2.5 py-1 rounded"
                   >
                     {tag}
-                  </span>
+                  </li>
                 ))}
-              </div>
-            </div>
+              </ul>
+            </article>
           ))}
         </div>
       </div>
