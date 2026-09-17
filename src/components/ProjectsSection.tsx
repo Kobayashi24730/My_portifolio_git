@@ -5,14 +5,14 @@ const projects = [
     title: "E-Commerce Platform",
     description: "Plataforma completa de e-commerce com carrinho, pagamentos e painel admin. Built com React, Node.js e PostgreSQL.",
     tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com/seu-usuario/ecommerce",
+    github: "https://github.com/Kobayashi24730/Ecommerce-moder-pro",
     live: "#",
   },
   {
     title: "Dashboard Analytics",
     description: "Dashboard interativo com gráficos dinâmicos, filtros avançados e exportação de relatórios em PDF.",
     tags: ["Next.js", "TypeScript", "Recharts", "Tailwind"],
-    github: "https://github.com/seu-usuario/dashboard",
+    github: "https://github.com/Kobayashi24730/Commerce-Analytics-Dashboard",
     live: "#",
   },
   {

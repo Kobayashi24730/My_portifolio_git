@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden bg-slate-50/50">
-      {/* Grid Background Estilo Microsoft Blueprint */}
+      {/* Grid Background */}
       <div 
         className="absolute inset-0 opacity-[0.05]" 
         style={{
@@ -65,7 +65,7 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* Linha de Terminal Estilo Light Mode */}
+        {/* Linha de Terminal */}
         <div className="mt-16 inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-lg shadow-sm font-[var(--font-display)] text-sm text-slate-700 animate-fade-in-up">
           <span className="text-blue-700 font-bold">$</span> cat skills.txt
           <span className="animate-pulse text-blue-700 font-bold ml-0.5">▌</span>
