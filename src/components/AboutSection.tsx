@@ -42,7 +42,7 @@ const AboutSection = () => {
 
           {/* Texto principal legível e bem escuro */}
           <p className="text-slate-800 mt-6 leading-relaxed font-normal text-base">
-            Engenheiro de Software Full Stack especializado na criação de aplicações web de alta performance. Tenho sólida bagagem no ecossistema <strong className="font-semibold text-slate-950">PHP (Laravel)</strong> e <strong className="font-semibold text-slate-950">JavaScript/TypeScript (Next.js, Node.js)</strong>, além de expertise em modelagem de bancos de dados relacionais e automação de rotinas complexas. Atuo unindo análise técnica apurada e engenharia de IA para transformar requisitos de negócio em produtos seguros, escaláveis e bem documentados.
+            Engenheiro de Software Full Stack especializado na criação de aplicações web de alta performance. Tenho sólida bagagem no ecossistema <strong className="font-semibold text-slate-950">PHP (Laravel)</strong>, <strong className="font-semibold text-slate-950">JavaScript/TypeScript (React, Node.js) e Java(Spring Boot)</strong>, além de expertise em modelagem de bancos de dados relacionais e automação de rotinas complexas. Atuo unindo análise técnica apurada e engenharia de IA para transformar requisitos de negócio em produtos seguros, escaláveis e bem documentados.
           </p>
         </div>
       </div>
