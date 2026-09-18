@@ -31,7 +31,7 @@ const HeroSection = () => {
 
         {/* Descrição Aprimorada */}
         <p className="text-slate-700 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-medium animate-fade-in-up">
-          Especialista no ecossistema <strong className="font-semibold text-slate-900">PHP (Laravel)</strong>, <strong className="font-semibold text-slate-900">JavaScript (React / Node.js)</strong> e Java(Spring Boot). Construo soluções web escaláveis, sistemas inteligentes e rotinas de alto desempenho.
+          Especialista no ecossistema <strong className="font-semibold text-slate-900">PHP (Laravel)</strong>, <strong className="font-semibold text-slate-900">JavaScript/TypeScript (React / Node.js) e Java(Spring Boot)</strong>. Construo soluções web escaláveis, sistemas inteligentes e rotinas de alto desempenho.
         </p>
 
         {/* Botões Estilo Fluent */}
